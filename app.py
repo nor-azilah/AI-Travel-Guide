@@ -3,12 +3,12 @@ import os
 import openai
 import pandas as pd
 import streamlit as st
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 #from IPython.display import HTML, display
 
 # Set up your OpenAI API key
-load_dotenv()
-api_key = os.getenv("KEY")
+#load_dotenv()
+os.environ.get("KEY")
 
 # Define the Streamlit app
 def main():
