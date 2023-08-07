@@ -16,7 +16,9 @@ Welcome to the **AI Travel Guide Explainer** app! This Streamlit-based web appli
 2. Install the required Python packages:
 3. Create a free account on OpenAI and obtain an API key.
 4. Open app.py and replace 'key' with your actual OpenAI API key.
-5. Run the app: streamlit run app.py
+5. Run the app:
+   ```sh
+   streamlit run app.py
 
 ## Usage
 Select your preferred travel style from the sidebar.
