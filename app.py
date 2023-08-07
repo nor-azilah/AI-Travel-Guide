@@ -8,7 +8,7 @@ import streamlit as st
 
 # Set up your OpenAI API key
 #load_dotenv()
-os.environ.get("KEY")
+api_key = os.getenv('KEY')
 
 # Define the Streamlit app
 def main():
