@@ -30,5 +30,13 @@ Screenshots
 
 
 Acknowledgements
-This app utilizes the OpenAI GPT-3.5 Turbo model for generating travel recommendations.
-Images are generated using the DALL-E model.
+
+- This app utilizes the OpenAI GPT-3.5 Turbo model for generating travel recommendations.
+- Images are generated using the DALL-E model.
+
+License
+
+- This project is licensed under the MIT License.
+
+Feel free to contribute or report issues.
+For inquiries, contact your-email@example.com.
