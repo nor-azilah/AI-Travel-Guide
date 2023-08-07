@@ -84,8 +84,7 @@ def explain_travel(user_input):
                                 - The best time to visit {user_input}.
                                 - {user_input}'s most famous and visited attractions.
                                 - Insights into local cuisine and must-try dishes in {user_input}.
-                                - Approximate budget estimations for {user_input}, including accommodations, transportation, and activities.
-                                - Common language insights for travelers visiting {user_input}.
+                                - Common language insights for travelers visiting {user_input}. Give some useful phrases that can be used in {user_input}.
                                 - Tips for a memorable trip to {user_input}.
                                """
             },
