@@ -12,7 +12,7 @@ openai.api_key = os.getenv('key')
 
 # Define the Streamlit app
 def main():
-    st.title("Travel Guide Explainer")
+    st.title("Welcome to the Travel Guide Explainer App!")
     
     # Add a quiz to determine the user's travel style
     st.sidebar.header("What's your travel style?")
@@ -62,14 +62,14 @@ def main():
         df = pd.DataFrame(food_destinations.items(), columns=["Destination", "Description"])
         st.sidebar.table(df.set_index("Destination"))
     
-    destination_input = st.text_area("Please enter your destination here:", height=200)
+    user_input = st.text_area("Please enter your destination here:", height=200)
     if st.button("Recommend me"):
-        explanation,image_urls = explain_travel(destination_input)
-        st.subheader(f"Recommendations for {destination_input}")
+        explanation,image_urls = explain_travel(user_input)
+        st.subheader(f"Recommendations for {user_input}")
         st.write(explanation)
         cols = st.columns(2)
         for i, image_url in enumerate(image_urls):
-            cols[i].image(image_url, caption=f"📷")
+            cols[i].image(image_url, caption=f"📷 Image of {user_input}")
 
 # Define a function to get the explanation
 def explain_travel(user_input):
@@ -79,9 +79,15 @@ def explain_travel(user_input):
         messages=[
             {
                 "role": "system",
-                "content": """You are the funniest, experienced personal travel guide explainer who has travelled to every part of the world,
-                              please explain to me when is the best time to visit, attractions, cuisine, and lastly language insights in a short
-                              but informative one. """
+                "content": """You are an experienced travel guide who has explored every destinations around the world. 
+                              Please provide concise information about {user_input}: 
+                                - The best time to visit {user_input}.
+                                - {user_input}'s most famous and visited attractions.
+                                - Insights into local cuisine and must-try dishes in {user_input}.
+                                - Approximate budget estimations for {user_input}, including accommodations, transportation, and activities.
+                                - Common language insights for travelers visiting {user_input}.
+                                - Tips for a memorable trip to {user_input}.
+                               """
             },
             {
                 "role": "user",
