@@ -94,7 +94,7 @@ def explain_travel(user_input):
     explanation = response['choices'][0]['message']['content']
     
      # Generate images using DALL-E
-    prompt = f"A realistic HD photo of famous landmark in {user_input} captured by a professional,competition winner photographer using a high quality camera in 2023"
+    prompt = f"An HD photo of famous landmark in {user_input} captured by a professional,competition winner photographer using a high quality camera in 2023"
     response = openai.Image.create(
         model="image-alpha-001",
         prompt=prompt,
