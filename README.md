@@ -19,7 +19,6 @@ Welcome to the **AI Travel Guide Explainer** app! This Streamlit-based web appli
 5. Run the app:
    ```sh
    streamlit run app.py
-
 ## Usage
 Select your preferred travel style from the sidebar.
 Input a destination from the provided space.
