@@ -24,19 +24,17 @@ Select your preferred travel style from the sidebar.
 Input a destination from the provided space.
 Click the "Recommend me" button to receive personalized recommendations and insights for the selected destination.
 
-Screenshots
+## Screenshots
 ![image](https://github.com/nor-azilah/AI-Travel-Guide/assets/141215896/5144fb73-d71b-47e0-927b-c1d9be448715)
 ![image](https://github.com/nor-azilah/AI-Travel-Guide/assets/141215896/4966335f-45fd-48b4-ac08-ce59e039dd81)
 
 
-Acknowledgements
+## Acknowledgements
 
 - This app utilizes the OpenAI GPT-3.5 Turbo model for generating travel recommendations.
 - Images are generated using the DALL-E model.
 
-License
+## License
 
 - This project is licensed under the MIT License.
 
-Feel free to contribute or report issues.
-For inquiries, contact your-email@example.com.
